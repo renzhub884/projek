@@ -143,7 +143,7 @@ function runObfuscator() {
             chaosData += "\\\\";"
         } else if (charCode < 32 || charCode > 126) {
             
-            chaosData += "\\" + charCode.toString(8).padStart(3, '0');"
+            chaosData += "\\" + charCode.toString(8).padStart(3, '0');
         } else {
             chaosData += String.fromCharCode(charCode);
         }
@@ -155,7 +155,7 @@ function runObfuscator() {
     let final = header + `return({${logic}})["J"](loadstring or load,"${key}","${chaosData}")(...)`;
 
    
-    final = final.replace(/\s+(?=(?:[^"]*"[^"]*")*[^"]*$)/g, "");"
+    final = final.replace(/\s+(?=(?:[^"]*"[^"]*")*[^"]*$)/g, "");
 
     if (outputArea) outputArea.value = final;
     if (status) status.innerText = "Successfully Obfuscate!";
@@ -183,7 +183,7 @@ function dl() {
         return;
     }
     let a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob([outputArea.value], { type: "text/plain" }));]]]
+    a.href = URL.createObjectURL(new Blob([outputArea.value], { type: "text/plain" }));
     a.download = "Beta_obfuscate.lua";
     a.click();
     URL.revokeObjectURL(a.href);
