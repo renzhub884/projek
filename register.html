@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="box slide-up">
+        <h3>REGISTER NEW AGENT</h3>
+        <div class="st">CREATE ACCESS CREDENTIALS</div>
+        
+        <div class="form-group">
+            <label>NEW USERNAME</label>
+            <input type="text" id="username" placeholder="Choose a username..." autocomplete="off">
+        </div>
+        <div class="form-group">
+            <label>NEW PASSWORD</label>
+            <input type="password" id="password" placeholder="Create a password...">
+        </div>
+        
+        <button onclick="register()">[ REGISTER ]</button>
+        <div class="error-msg" id="errorMsg"></div>
+        <div class="success-msg" id="successMsg">REGISTER SUCCESS! Redirecting to Login...</div>
+        
+        <a href="index.html" class="link">Sudah punya akun? Login di sini</a>
+    </div>
+</body>
+</html>
