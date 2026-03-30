@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obfuscator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="checkAuth()">
+    <div class="box slide-up" style="max-width: 950px;">
+        <h3>OBFUSCATOR<br><span style="font-size:14px; color:#fff;">(Beta Version)</span></h3>
+        <div class="st" id="st">OBFUSCATE YOUR SCRIPT NOW</div>
+
+        <label class="upload-area">
+            <input type="file" id="f" hidden>
+            <span id="fname">UPLOAD FILE LUA</span>
+        </label>
+        
+        <textarea id="i" placeholder="Paste your script here..."></textarea>
+        
+        <div class="btns">
+            <button onclick="runObfuscator()">Obfuscate</button>
+            <button onclick="cp()">Copy</button>
+            <button onclick="dl()">Download</button>
+            <button onclick="rs()">Reset</button>
+        </div>
+        
+        <textarea id="o" readonly placeholder="Result..."></textarea>
+
+        <a href="main.html" class="link" style="margin-top: 20px;">[ &lt; BACK TO DASHBOARD ]</a>
+    </div>
+</body>
+</html>
